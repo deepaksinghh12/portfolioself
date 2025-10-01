@@ -131,7 +131,7 @@ export default function Events() {
               <div className="flex items-center gap-3">
                 <Trophy className="h-8 w-8 text-primary" />
                 <div className="text-left">
-                  <p className="text-2xl font-bold" data-testid="text-events-stat-hackathons">2+</p>
+                  <p className="text-2xl font-bold" data-testid="text-events-stat-hackathons">Multiple</p>
                   <p className="text-sm text-muted-foreground">Hackathons</p>
                 </div>
               </div>
