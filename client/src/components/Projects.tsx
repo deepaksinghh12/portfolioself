@@ -26,11 +26,11 @@ export default function Projects() {
       githubUrl: 'https://github.com/deepaksinghh12/algoquest',
     },
     {
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce solution with payment integration, user authentication, and admin dashboard. Features include product catalog, shopping cart, order management, and secure checkout with Stripe.',
-      techStack: ['React', 'Node.js', 'Stripe', 'PostgreSQL'],
-      githubUrl: '#',
-      liveUrl: '#',
+      title: 'AgriMitra',
+      description: 'An intelligent web application providing farmers with AI-powered tools for crop management, disease detection, and market insights.',
+      techStack: ['React', 'Node.js', 'Tailwind', 'MongoDb'],
+      githubUrl: 'https://github.com/deepaksinghh12/Project-Kisan-Agrimitra',
+      liveUrl: 'https://agrimitra-kisan.vercel.app/',
     },
     {
       title: 'Task Management Dashboard',
