@@ -1,0 +1,17 @@
+# netlify.toml
+
+# This section tells Netlify how to build your React frontend
+[build]
+  base    = "client"
+  command = "npm run build"
+  publish = "dist"
+
+# This section tells Netlify where your serverless functions are
+[functions]
+  directory = "netlify/functions"
+
+# This rule proxies API requests to your serverless function
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
