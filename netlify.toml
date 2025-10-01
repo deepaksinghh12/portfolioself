@@ -3,7 +3,7 @@
 # This section tells Netlify how to build your React frontend
 [build]
   base    = "client"
-  command = "npm run build"
+  command = "npm install && npm run build"
   publish = "dist"
 
 # This section tells Netlify where your serverless functions are
