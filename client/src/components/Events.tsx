@@ -24,7 +24,7 @@ export default function Events() {
         'Team collaboration and development',
         'National-level competition',
       ],
-      linkedinUrl: '#', // Replace with your LinkedIn post URL
+      linkedinUrl: 'https://www.linkedin.com/posts/deepaksinghh12_isro-indiainspace-hackathon-activity-7374389265537044480-lqr6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2R510BWGF6f0cr_DV60_wDWiXg4F6Nr-k', // Replace with your LinkedIn post URL
     },
     {
       title: 'Google Cloud Agentic AI Day',
@@ -36,7 +36,7 @@ export default function Events() {
         'Google Cloud AI platform',
         'Hands-on development experience',
       ],
-      linkedinUrl: '#', // Replace with your LinkedIn post URL
+      linkedinUrl: 'https://www.linkedin.com/posts/deepaksinghh12_googlecloud-hack2skill-agenticai-activity-7371052297595858944-Ya_w?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2R510BWGF6f0cr_DV60_wDWiXg4F6Nr-k', // Replace with your LinkedIn post URL
     },
     {
       title: 'Google AI Labs - Jaipur',
@@ -48,7 +48,7 @@ export default function Events() {
         'AI/ML frameworks and tools',
         'Hands-on workshops and demos',
       ],
-      linkedinUrl: '#', // Replace with your LinkedIn post URL
+      linkedinUrl: 'https://www.linkedin.com/posts/deepaksinghh12_googlecloud-ailabs-ai-activity-7364910518656012288-ASLf?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2R510BWGF6f0cr_DV60_wDWiXg4F6Nr-k', // Replace with your LinkedIn post URL
     },
   ];
 
