@@ -33,18 +33,11 @@ export default function Projects() {
       liveUrl: 'https://agrimitra-kisan.vercel.app/',
     },
     {
-      title: 'Task Management Dashboard',
-      description: 'Modern task management application with drag-and-drop functionality, real-time updates, and collaborative features. Built with Next.js and TypeScript for type safety and better developer experience.',
-      techStack: ['Next.js', 'TypeScript', 'Prisma', 'Tailwind'],
-      githubUrl: '#',
-      liveUrl: '#',
-    },
-    {
-      title: 'Real-time Chat Application',
-      description: 'WebSocket-based chat application with multiple chat rooms, direct messaging, file sharing, and online status indicators. Implemented with Socket.io for real-time bidirectional communication.',
-      techStack: ['React', 'Socket.io', 'Node.js', 'MongoDB'],
-      githubUrl: '#',
-      liveUrl: '#',
+      title: 'Quotely',
+      description: 'Quotely is a user-friendly web application that allows users to design customized quotes or text over visually appealing background templates. ',
+      techStack: ['React', 'Vite', 'Vercel', 'Tailwind'],
+      githubUrl: 'https://github.com/deepaksinghh12/Quotely-Turn-your-text-into-stunning-visual-posts.',
+      liveUrl: 'https://quotely-turn-your-text-into-stunnin.vercel.app/',
     },
   ];
 
