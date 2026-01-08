@@ -14,7 +14,7 @@ export default function Education() {
       degree: 'B.Tech in Computer Science',
       institution: 'Modern Institute of Technology and Research Centre (MITRC), Alwar',
       duration: '2022 – 2026',
-      grade: 'CGPA: 8.9',
+      grade: 'CGPA: 8.92',
     },
     {
       degree: 'Class 12th (CBSE)',
@@ -51,15 +51,15 @@ export default function Education() {
                 <div className="p-3 bg-primary/10 rounded-lg w-fit mb-4">
                   <GraduationCap className="h-6 w-6 text-primary" />
                 </div>
-                
+
                 <h3 className="text-lg font-bold mb-2" data-testid={`text-education-degree-${index}`}>
                   {edu.degree}
                 </h3>
-                
+
                 <p className="text-muted-foreground mb-2 flex-1" data-testid={`text-education-institution-${index}`}>
                   {edu.institution}
                 </p>
-                
+
                 <div className="space-y-1 pt-2 border-t">
                   <p className="text-sm text-muted-foreground" data-testid={`text-education-duration-${index}`}>
                     {edu.duration}

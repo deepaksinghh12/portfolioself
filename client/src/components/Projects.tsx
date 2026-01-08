@@ -14,27 +14,40 @@ interface Project {
 export default function Projects() {
   const projects: Project[] = [
     {
-      title: 'City Guardian',
-      description: 'AI-Based Civic Monitoring App with automated pothole detection using AI/ML. Features real-time incident reporting via Firebase, reduced false positives by 40% through fine-tuned detection models, and captured 50+ pothole entries with live map tracking.',
-      techStack: ['Flutter', 'Firebase', 'AI/ML', 'Maps API'],
-      githubUrl: 'https://github.com/deepaksinghh12/city-guardian',
+      title: 'SAT-VEX',
+      description: 'Satellite Tracking & Footprint Prediction System (Oct 2025 – Present). Engineered a TLE + SGP4 based tracking system with 3D visualization in CesiumJS. Integrated ML-based correction models reducing prediction deviation by 10–15% and added ground-footprint estimation.',
+      techStack: ['CesiumJS', 'Machine Learning', 'SGP4/TLE', 'React'],
+      githubUrl: 'https://github.com/deepaksinghh12/Satvex',
+      liveUrl: 'https://sat-vex.vercel.app/', // Placeholder
     },
     {
-      title: 'AlgoQuest',
-      description: 'Algorithm Visualizer & Coding Practice Platform built with MERN stack. Visualize algorithms (sorting, searching, graphs) and solve coding challenges. Integrated code editor (Monaco/CodeMirror) with problem categories, difficulty filters, and scoring system.',
-      techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Monaco Editor'],
-      githubUrl: 'https://github.com/deepaksinghh12/algoquest',
+      title: 'CME Detection (SIH 2025 Winner)',
+      description: 'AI-based space-weather and CME risk-assessment platform. Won Smart India Hackathon 2025 at the national level among 10,000+ teams. Designed backend APIs and contributed to Python ML and Flutter modules.',
+      techStack: ['Python', 'Machine Learning', 'Flutter', 'FastAPI'],
+      githubUrl: 'https://github.com/deepaksinghh12/CME_Detection',
+    },
+    {
+      title: 'City Guardian',
+      description: 'AI-Based Civic Monitoring App. Developed a Flutter app with TFLite for real-time pothole detection (90%+ accuracy). Visualized 50+ potholes using Google Maps API and integrated Firebase for seamless reporting.',
+      techStack: ['Flutter', 'TFLite', 'Firebase', 'Google Maps API'],
+      githubUrl: 'https://github.com/deepaksinghh12/City_Guardian',
     },
     {
       title: 'AgriMitra',
-      description: 'An intelligent web application providing farmers with AI-powered tools for crop management, disease detection, and market insights.',
-      techStack: ['React', 'Node.js', 'Tailwind', 'MongoDb'],
+      description: 'Smart Farming & Crop Advisory Platform. Designed MERN platform for AI crop recommendations (90%+ accuracy). Processed plant disease images in 1–2 seconds using ML inference and improved UI/UX via React + Tailwind.',
+      techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Machine Learning'],
       githubUrl: 'https://github.com/deepaksinghh12/Project-Kisan-Agrimitra',
       liveUrl: 'https://agrimitra-kisan.vercel.app/',
     },
     {
+      title: 'AlgoQuest',
+      description: 'MERN-based platform for visualizing sorting, searching, and graph algorithms. Implemented 12+ interactive modules with Monaco editor, difficulty filters, and step-by-step highlights.',
+      techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Monaco Editor'],
+      githubUrl: 'https://github.com/deepaksinghh12/algoquest',
+    },
+    {
       title: 'Quotely',
-      description: 'Quotely is a user-friendly web application that allows users to design customized quotes or text over visually appealing background templates. ',
+      description: 'Quotely is a user-friendly web application that allows users to design customized quotes or text over visually appealing background templates.',
       techStack: ['React', 'Vite', 'Vercel', 'Tailwind'],
       githubUrl: 'https://github.com/deepaksinghh12/Quotely-Turn-your-text-into-stunning-visual-posts.',
       liveUrl: 'https://quotely-turn-your-text-into-stunnin.vercel.app/',

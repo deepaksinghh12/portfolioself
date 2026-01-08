@@ -19,6 +19,12 @@ export default function Hero() {
             Hi, I'm
           </p>
           
+          <div className="flex justify-center mb-4">
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary/10 text-primary animate-fade-in">
+              🏆 SIH 2025 Winner
+            </span>
+          </div>
+
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold animate-fade-in-up" data-testid="text-name">
             Deepak Singh
           </h1>
@@ -28,7 +34,7 @@ export default function Hero() {
           </h2>
           
           <p className="max-w-2xl mx-auto text-lg text-muted-foreground animate-fade-in-up" data-testid="text-summary">
-            Final-year B.Tech student with hands-on experience in Java, Full stack web technologies (MERN), and Flutter-based Android applications, skilled in REST APIs, SQL, Firebase, and DSA.
+            Final-year B.Tech student and SIH 2025 Winner with hands-on experience in Java, MERN, Flutter, REST APIs, SQL, and DSA. Skilled in building cross-platform applications, integrating cloud services, and contributing to open-source projects.
           </p>
           
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4 animate-fade-in-up">

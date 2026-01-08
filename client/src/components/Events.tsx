@@ -15,6 +15,18 @@ interface Event {
 export default function Events() {
   const events: Event[] = [
     {
+      title: 'Smart India Hackathon (SIH) 2025 - Winner',
+      type: 'National Win',
+      description: 'Won SIH 2025 at the national level among 10,000+ teams. Developed an AI-based space-weather and CME risk-assessment platform.',
+      icon: Trophy,
+      highlights: [
+        'National Level Winner',
+        'AI/ML & Space Weather',
+        'Full Stack & ML Integration',
+      ],
+      linkedinUrl: 'https://linkedin.com/in/deepaksinghh12',
+    },
+    {
       title: 'Bharatiya Antariksh Hackathon 2025',
       type: 'Hackathon',
       description: 'Participated in the Bharatiya Antariksh Hackathon 2025, a national-level competition focused on space technology and innovation, collaborating with teams to develop cutting-edge solutions.',
@@ -24,7 +36,7 @@ export default function Events() {
         'Team collaboration and development',
         'National-level competition',
       ],
-      linkedinUrl: 'https://www.linkedin.com/posts/deepaksinghh12_isro-indiainspace-hackathon-activity-7374389265537044480-lqr6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2R510BWGF6f0cr_DV60_wDWiXg4F6Nr-k', // Replace with your LinkedIn post URL
+      linkedinUrl: 'https://www.linkedin.com/posts/deepaksinghh12_isro-indiainspace-hackathon-activity-7374389265537044480-lqr6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2R510BWGF6f0cr_DV60_wDWiXg4F6Nr-k',
     },
     {
       title: 'Google Cloud Agentic AI Day',
@@ -36,19 +48,7 @@ export default function Events() {
         'Google Cloud AI platform',
         'Hands-on development experience',
       ],
-      linkedinUrl: 'https://www.linkedin.com/posts/deepaksinghh12_googlecloud-hack2skill-agenticai-activity-7371052297595858944-Ya_w?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2R510BWGF6f0cr_DV60_wDWiXg4F6Nr-k', // Replace with your LinkedIn post URL
-    },
-    {
-      title: 'Google AI Labs - Jaipur',
-      type: 'Workshop',
-      description: 'Attended Google AI Labs event in Jaipur with speakers from Google and Hack2Skill, exploring cutting-edge AI technologies, machine learning frameworks, and hands-on workshops on implementing AI solutions.',
-      icon: Lightbulb,
-      highlights: [
-        'Speakers from Google and Hack2Skill',
-        'AI/ML frameworks and tools',
-        'Hands-on workshops and demos',
-      ],
-      linkedinUrl: 'https://www.linkedin.com/posts/deepaksinghh12_googlecloud-ailabs-ai-activity-7364910518656012288-ASLf?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2R510BWGF6f0cr_DV60_wDWiXg4F6Nr-k', // Replace with your LinkedIn post URL
+      linkedinUrl: 'https://www.linkedin.com/posts/deepaksinghh12_googlecloud-hack2skill-agenticai-activity-7371052297595858944-Ya_w?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2R510BWGF6f0cr_DV60_wDWiXg4F6Nr-k',
     },
   ];
 
@@ -89,7 +89,7 @@ export default function Events() {
                     <p className="text-muted-foreground mb-4" data-testid={`text-event-description-${index}`}>
                       {event.description}
                     </p>
-                    
+
                     {event.highlights && (
                       <ul className="space-y-2 mb-4">
                         {event.highlights.map((highlight, highlightIndex) => (
@@ -104,7 +104,7 @@ export default function Events() {
                         ))}
                       </ul>
                     )}
-                    
+
                     {event.linkedinUrl && (
                       <Button
                         variant="outline"
