@@ -14,15 +14,17 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Experience />
-      <Education />
-      <Events />
-      <Resume />
-      <Contact />
+      <main id="main-content">
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Education />
+        <Events />
+        <Resume />
+        <Contact />
+      </main>
       <Footer />
     </div>
   );

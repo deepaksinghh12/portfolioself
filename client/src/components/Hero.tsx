@@ -30,11 +30,11 @@ export default function Hero() {
           </h1>
           
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-muted-foreground animate-fade-in-up" data-testid="text-title">
-            Full Stack Developer
+            Full Stack Developer Building AI-Powered Applications
           </h2>
           
           <p className="max-w-2xl mx-auto text-lg text-muted-foreground animate-fade-in-up" data-testid="text-summary">
-            Final-year B.Tech student and SIH 2025 Winner with hands-on experience in Java, MERN, Flutter, REST APIs, SQL, and DSA. Skilled in building cross-platform applications, integrating cloud services, and contributing to open-source projects.
+            Final-year B.Tech CSE student (CGPA: 9.03) and SIH 2025 National Winner. Engineering scalable full-stack web and cross-platform applications, integrating modern AI/ML systems, and contributing to open-source software.
           </p>
           
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4 animate-fade-in-up">
@@ -62,22 +62,22 @@ export default function Hero() {
           
           <div className="flex items-center justify-center gap-3 pt-6 animate-fade-in-up">
             <Button variant="ghost" size="icon" asChild data-testid="button-hero-github">
-              <a href="https://github.com/deepaksinghh12" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/deepaksinghh12" target="_blank" rel="noopener noreferrer" aria-label="Deepak's GitHub Profile">
                 <Github className="h-5 w-5" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild data-testid="button-hero-linkedin">
-              <a href="https://linkedin.com/in/deepaksinghh12" target="_blank" rel="noopener noreferrer">
+              <a href="https://linkedin.com/in/deepaksinghh12" target="_blank" rel="noopener noreferrer" aria-label="Deepak's LinkedIn Profile">
                 <Linkedin className="h-5 w-5" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild data-testid="button-hero-leetcode">
-              <a href="https://leetcode.com/deepaksinghh12" target="_blank" rel="noopener noreferrer">
+              <a href="https://leetcode.com/deepaksinghh12" target="_blank" rel="noopener noreferrer" aria-label="Deepak's LeetCode Profile">
                 <Code className="h-5 w-5" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild data-testid="button-hero-email">
-              <a href="mailto:deepaksingh91065@gmail.com">
+              <a href="mailto:deepaksingh91065@gmail.com" aria-label="Send an email to Deepak Singh">
                 <Mail className="h-5 w-5" />
               </a>
             </Button>
@@ -90,6 +90,7 @@ export default function Hero() {
           onClick={() => scrollToSection('about')}
           className="text-muted-foreground hover-elevate p-2 rounded-full"
           data-testid="button-scroll-down"
+          aria-label="Scroll down to About section"
         >
           <ArrowDown className="h-6 w-6" />
         </button>

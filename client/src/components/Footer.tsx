@@ -48,17 +48,17 @@ export default function Footer() {
             </h4>
             <div className="flex gap-2">
               <Button variant="ghost" size="icon" asChild data-testid="button-footer-github">
-                <a href="https://github.com/deepaksinghh12" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/deepaksinghh12" target="_blank" rel="noopener noreferrer" aria-label="Deepak's GitHub Profile">
                   <Github className="h-5 w-5" />
                 </a>
               </Button>
               <Button variant="ghost" size="icon" asChild data-testid="button-footer-linkedin">
-                <a href="https://linkedin.com/in/deepaksinghh12" target="_blank" rel="noopener noreferrer">
+                <a href="https://linkedin.com/in/deepaksinghh12" target="_blank" rel="noopener noreferrer" aria-label="Deepak's LinkedIn Profile">
                   <Linkedin className="h-5 w-5" />
                 </a>
               </Button>
               <Button variant="ghost" size="icon" asChild data-testid="button-footer-leetcode">
-                <a href="https://leetcode.com/deepaksinghh12" target="_blank" rel="noopener noreferrer">
+                <a href="https://leetcode.com/deepaksinghh12" target="_blank" rel="noopener noreferrer" aria-label="Deepak's LeetCode Profile">
                   <Code className="h-5 w-5" />
                 </a>
               </Button>

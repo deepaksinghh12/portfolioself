@@ -41,7 +41,7 @@ export default function About() {
             </p>
             
             <p className="text-muted-foreground" data-testid="text-about-passion">
-              I thrive in environments that challenge my problem-solving skills and offer opportunities for continuous learning and growth. Currently pursuing my B.Tech in Computer Science with a CGPA of 8.9, I'm focused on building innovative solutions that make a real impact.
+              I thrive in environments that challenge my problem-solving skills and offer opportunities for continuous learning and growth. Currently pursuing my B.Tech in Computer Science with a CGPA of 9.03, I'm focused on building innovative solutions that make a real impact.
             </p>
           </div>
 

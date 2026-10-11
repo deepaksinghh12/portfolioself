@@ -17,12 +17,12 @@ export default function Events() {
     {
       title: 'Smart India Hackathon (SIH) 2025 - Winner',
       type: 'National Win',
-      description: 'Won SIH 2025 at the national level among 10,000+ teams. Developed an AI-based space-weather and CME risk-assessment platform.',
+      description: 'Won SIH 2025 at the national level among 50,000+ teams. Developed an AI-based CME risk-assessment and space-weather forecasting platform addressing an ISRO problem statement.',
       icon: Trophy,
       highlights: [
-        'National Level Winner',
-        'AI/ML & Space Weather',
-        'Full Stack & ML Integration',
+        'National Level Winner (50,000+ Teams)',
+        'AI/ML Space Weather Forecasting',
+        'ISRO Problem Statement',
       ],
       linkedinUrl: 'https://linkedin.com/in/deepaksinghh12',
     },

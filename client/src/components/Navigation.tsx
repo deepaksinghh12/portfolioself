@@ -70,7 +70,7 @@ export default function Navigation() {
               asChild
               data-testid="button-github"
             >
-              <a href="https://github.com/deepaksinghh12" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/deepaksinghh12" target="_blank" rel="noopener noreferrer" aria-label="Deepak's GitHub Profile">
                 <Github className="h-5 w-5" />
               </a>
             </Button>
@@ -80,7 +80,7 @@ export default function Navigation() {
               asChild
               data-testid="button-linkedin"
             >
-              <a href="https://linkedin.com/in/deepaksinghh12" target="_blank" rel="noopener noreferrer">
+              <a href="https://linkedin.com/in/deepaksinghh12" target="_blank" rel="noopener noreferrer" aria-label="Deepak's LinkedIn Profile">
                 <Linkedin className="h-5 w-5" />
               </a>
             </Button>
@@ -90,7 +90,7 @@ export default function Navigation() {
               asChild
               data-testid="button-leetcode"
             >
-              <a href="https://leetcode.com/deepaksinghh12" target="_blank" rel="noopener noreferrer">
+              <a href="https://leetcode.com/deepaksinghh12" target="_blank" rel="noopener noreferrer" aria-label="Deepak's LeetCode Profile">
                 <Code className="h-5 w-5" />
               </a>
             </Button>
@@ -102,6 +102,7 @@ export default function Navigation() {
             className="md:hidden"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             data-testid="button-mobile-menu"
+            aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
           >
             {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </Button>
@@ -124,17 +125,17 @@ export default function Navigation() {
             ))}
             <div className="flex gap-2 pt-2 border-t">
               <Button variant="ghost" size="icon" asChild>
-                <a href="https://github.com/deepaksinghh12" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/deepaksinghh12" target="_blank" rel="noopener noreferrer" aria-label="Deepak's GitHub Profile">
                   <Github className="h-5 w-5" />
                 </a>
               </Button>
               <Button variant="ghost" size="icon" asChild>
-                <a href="https://linkedin.com/in/deepaksinghh12" target="_blank" rel="noopener noreferrer">
+                <a href="https://linkedin.com/in/deepaksinghh12" target="_blank" rel="noopener noreferrer" aria-label="Deepak's LinkedIn Profile">
                   <Linkedin className="h-5 w-5" />
                 </a>
               </Button>
               <Button variant="ghost" size="icon" asChild>
-                <a href="https://leetcode.com/deepaksinghh12" target="_blank" rel="noopener noreferrer">
+                <a href="https://leetcode.com/deepaksinghh12" target="_blank" rel="noopener noreferrer" aria-label="Deepak's LeetCode Profile">
                   <Code className="h-5 w-5" />
                 </a>
               </Button>

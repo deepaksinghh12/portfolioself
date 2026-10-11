@@ -14,41 +14,41 @@ interface Project {
 export default function Projects() {
   const projects: Project[] = [
     {
-      title: 'SAT-VEX',
-      description: 'Satellite Tracking & Footprint Prediction System (Oct 2025 – Present). Engineered a TLE + SGP4 based tracking system with 3D visualization in CesiumJS. Integrated ML-based correction models reducing prediction deviation by 10–15% and added ground-footprint estimation.',
-      techStack: ['CesiumJS', 'Machine Learning', 'SGP4/TLE', 'React'],
-      githubUrl: 'https://github.com/deepaksinghh12/Satvex',
-      liveUrl: 'https://sat-vex.vercel.app/', // Placeholder
-    },
-    {
-      title: 'CME Detection (SIH 2025 Winner)',
-      description: 'AI-based space-weather and CME risk-assessment platform. Won Smart India Hackathon 2025 at the national level among 10,000+ teams. Designed backend APIs and contributed to Python ML and Flutter modules.',
-      techStack: ['Python', 'Machine Learning', 'Flutter', 'FastAPI'],
+      title: 'CME Detection & Space Weather Platform (SIH 2025 Winner)',
+      description: 'AI-based coronal mass ejection (CME) risk assessment and space-weather forecasting platform built for an ISRO problem statement. Won Smart India Hackathon 2025 at the national level among 50,000+ teams. Designed FastAPI ML backend for solar event classification and automated reporting workflows.',
+      techStack: ['Python', 'FastAPI', 'Machine Learning', 'Flutter', 'REST APIs'],
       githubUrl: 'https://github.com/deepaksinghh12/CME_Detection',
-    },
-    {
-      title: 'City Guardian',
-      description: 'AI-Based Civic Monitoring App. Developed a Flutter app with TFLite for real-time pothole detection (90%+ accuracy). Visualized 50+ potholes using Google Maps API and integrated Firebase for seamless reporting.',
-      techStack: ['Flutter', 'TFLite', 'Firebase', 'Google Maps API'],
-      githubUrl: 'https://github.com/deepaksinghh12/City_Guardian',
+      liveUrl: 'https://cme-detection.vercel.app/',
     },
     {
       title: 'AgriMitra',
-      description: 'Smart Farming & Crop Advisory Platform. Designed MERN platform for AI crop recommendations (90%+ accuracy). Processed plant disease images in 1–2 seconds using ML inference and improved UI/UX via React + Tailwind.',
-      techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Machine Learning'],
-      githubUrl: 'https://github.com/deepaksinghh12/Project-Kisan-Agrimitra',
+      description: 'Smart farming and crop advisory progressive web application (PWA). Delivers multilingual crop recommendations (90%+ accuracy), weather forecasts, and dynamic market prices. Integrated a FastAPI microservice running a PyTorch MobileNetV2 model for real-time plant disease detection from leaf images.',
+      techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'FastAPI', 'PyTorch', 'MobileNetV2', 'Tailwind CSS'],
+      githubUrl: 'https://github.com/deepaksinghh12/Agrimitra',
       liveUrl: 'https://agrimitra-kisan.vercel.app/',
     },
     {
+      title: 'City Guardian',
+      description: 'AI-based civic monitoring mobile application engineered with Flutter and TensorFlow Lite for real-time pothole detection (90%+ accuracy). Integrates Google Maps APIs and Firebase for authentication, real-time sync, and location-based civic reporting.',
+      techStack: ['Flutter', 'TensorFlow Lite', 'Firebase', 'Google Maps API', 'Dart'],
+      githubUrl: 'https://github.com/deepaksinghh12/City_Guardian',
+    },
+    {
       title: 'AlgoQuest',
-      description: 'MERN-based platform for visualizing sorting, searching, and graph algorithms. Implemented 12+ interactive modules with Monaco editor, difficulty filters, and step-by-step highlights.',
-      techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Monaco Editor'],
+      description: 'MERN-based interactive algorithm visualization platform engineered during full-stack internship at CodeUnia. Features 12+ interactive modules for sorting, searching, and graph algorithms with custom step-by-step execution highlights, Monaco editor, and difficulty filters.',
+      techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'REST APIs', 'Monaco Editor'],
       githubUrl: 'https://github.com/deepaksinghh12/algoquest',
     },
     {
+      title: 'SAT-VEX',
+      description: 'Satellite tracking and footprint prediction system using TLE + SGP4 with real-time 3D orbital visualization in CesiumJS. Integrated ML-based correction models trained on 500+ TLE samples, reducing prediction deviation by 10–15% for ground-footprint coverage analysis.',
+      techStack: ['CesiumJS', 'React', 'Machine Learning', 'SGP4/TLE', 'Python'],
+      githubUrl: 'https://github.com/deepaksinghh12/Satvex',
+    },
+    {
       title: 'Quotely',
-      description: 'Quotely is a user-friendly web application that allows users to design customized quotes or text over visually appealing background templates.',
-      techStack: ['React', 'Vite', 'Vercel', 'Tailwind'],
+      description: 'Interactive web application allowing users to design and customize quotes and typography over curated visual background templates with responsive export options.',
+      techStack: ['React', 'Vite', 'Tailwind CSS'],
       githubUrl: 'https://github.com/deepaksinghh12/Quotely-Turn-your-text-into-stunning-visual-posts.',
       liveUrl: 'https://quotely-turn-your-text-into-stunnin.vercel.app/',
     },
@@ -105,7 +105,12 @@ export default function Projects() {
                         asChild
                         data-testid={`button-github-${index}`}
                       >
-                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                        <a
+                          href={project.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`View source code for ${project.title} on GitHub`}
+                        >
                           <Github className="mr-2 h-4 w-4" />
                           Code
                         </a>
@@ -116,7 +121,12 @@ export default function Projects() {
                         asChild
                         data-testid={`button-live-${index}`}
                       >
-                        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`View live demo for ${project.title}`}
+                        >
                           <ExternalLink className="mr-2 h-4 w-4" />
                           Live Demo
                         </a>

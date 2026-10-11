@@ -15,19 +15,19 @@ export default function Experience() {
       company: 'CodeUnia',
       duration: 'Jul 2025 – Aug 2025',
       achievements: [
-        'Engineered 5+ algorithm visualizations on AlgoQuest, improving user interaction by 40%',
-        'Implemented JWT authentication, reducing user access issues',
-        'Refined MongoDB queries, achieving a 25% boost in API responsiveness',
+        'Built AlgoQuest, a MERN-based platform for visualizing sorting, searching, and graph algorithms',
+        'Implemented 12+ interactive modules using React, Node.js, MongoDB, and REST APIs',
+        'Engineered algorithm execution controls and interactive code visualizations',
       ],
     },
     {
       role: 'Open Source Contributor',
-      company: 'GirlScript Summer of Code (GSSoC)',
+      company: 'GirlScript Summer of Code, Aperture & Open Source Connect',
       duration: 'June 2025 – Present',
       achievements: [
-        'Contributed to multiple open-source projects by fixing bugs, enhancing features, and improving documentation',
-        'Collaborated with maintainers and fellow contributors using GitHub workflows',
-        'Gained experience in collaborative development and code review processes',
+        'Contributed 15+ merged pull requests across community and open-source repositories',
+        'Fixed critical bugs, enhanced core features, and improved technical documentation',
+        'Collaborated with project maintainers and developers via structured GitHub workflows',
       ],
     },
   ];

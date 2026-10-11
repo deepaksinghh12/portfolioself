@@ -46,7 +46,7 @@ export default function Resume() {
             </div>
             
             <div className="pt-4 text-sm text-muted-foreground">
-              <p data-testid="text-resume-info">Includes certifications from HackerRank, Skill Oceans, and Upflairs</p>
+              <p data-testid="text-resume-info">Includes TCS iON NQT (80+ score) and certifications from Skill Oceans & Upflairs</p>
             </div>
           </div>
         </Card>

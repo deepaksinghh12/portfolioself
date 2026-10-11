@@ -14,7 +14,7 @@ export default function Education() {
       degree: 'B.Tech in Computer Science',
       institution: 'Modern Institute of Technology and Research Centre (MITRC), Alwar',
       duration: '2022 – 2026',
-      grade: 'CGPA: 8.92',
+      grade: 'CGPA: 9.03',
     },
     {
       degree: 'Class 12th (CBSE)',

@@ -10,19 +10,19 @@ export default function Skills() {
     { name: 'Java', icon: 'devicon-java-plain' },
     { name: 'Spring Boot', icon: 'devicon-spring-plain' },
     { name: 'Python', icon: 'devicon-python-plain' },
+    { name: 'FastAPI', icon: 'devicon-fastapi-plain' },
     { name: 'React', icon: 'devicon-react-original' },
     { name: 'Node.js', icon: 'devicon-nodejs-plain' },
     { name: 'Express', icon: 'devicon-express-original' },
     { name: 'MongoDB', icon: 'devicon-mongodb-plain' },
     { name: 'MySQL', icon: 'devicon-mysql-plain' },
     { name: 'PostgreSQL', icon: 'devicon-postgresql-plain' },
-    { name: 'Hibernate', icon: 'devicon-hibernate-plain' },
+    { name: 'Flutter', icon: 'devicon-flutter-plain' },
+    { name: 'PyTorch', icon: 'devicon-pytorch-plain' },
     { name: 'Firebase', icon: 'devicon-firebase-plain' },
     { name: 'Tailwind', icon: 'devicon-tailwindcss-plain' },
     { name: 'Git', icon: 'devicon-git-plain' },
-    { name: 'Figma', icon: 'devicon-figma-plain' },
     { name: 'Docker', icon: 'devicon-docker-plain' },
-    { name: 'Flutter', icon: 'devicon-flutter-plain' },
   ];
 
   return (
