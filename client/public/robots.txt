@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://deepaksinghdev.in/sitemap.xml
+Sitemap: https://www.deepaksinghdev.in/sitemap.xml
