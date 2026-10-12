@@ -32,6 +32,9 @@ export interface ProjectData {
   isPrivateRepo?: boolean;
   canEmbedLivePreview: boolean;
   previewType: 'live-iframe' | 'mobile-mockup' | 'dashboard-mockup' | 'code-visualizer';
+  screenshotUrl: string;
+  screenshotAlt: string;
+  objectFit?: 'cover' | 'contain';
 }
 
 export const PROJECTS: ProjectData[] = [
@@ -79,6 +82,9 @@ export const PROJECTS: ProjectData[] = [
     isPrivateRepo: true,
     canEmbedLivePreview: false,
     previewType: 'dashboard-mockup',
+    screenshotUrl: '/images/projects/revflux.png',
+    screenshotAlt: 'RevFlux AI CRM genuine architecture and dashboard interface',
+    objectFit: 'contain',
   },
   {
     id: 'agrimitra',
@@ -125,6 +131,9 @@ export const PROJECTS: ProjectData[] = [
     liveUrl: 'https://agrimitra.deepaksinghdev.in/',
     canEmbedLivePreview: true,
     previewType: 'live-iframe',
+    screenshotUrl: '/images/projects/agrimitra.png',
+    screenshotAlt: 'AgriMitra genuine production web application screenshot',
+    objectFit: 'cover',
   },
   {
     id: 'city-guardian',
@@ -171,6 +180,9 @@ export const PROJECTS: ProjectData[] = [
     githubUrl: 'https://github.com/deepaksinghh12/City-Guardian-App',
     canEmbedLivePreview: false,
     previewType: 'mobile-mockup',
+    screenshotUrl: '/images/projects/city-guardian.jpeg',
+    screenshotAlt: 'City Guardian authentic Flutter mobile app screenshot',
+    objectFit: 'contain',
   },
   {
     id: 'cme-detection',
@@ -217,6 +229,9 @@ export const PROJECTS: ProjectData[] = [
     liveUrl: 'https://cme-detection.vercel.app/',
     canEmbedLivePreview: true,
     previewType: 'live-iframe',
+    screenshotUrl: '/images/projects/cme-detection.png',
+    screenshotAlt: 'CME Space Weather Platform genuine production deployment screenshot',
+    objectFit: 'cover',
   },
   {
     id: 'algoquest',
@@ -262,6 +277,9 @@ export const PROJECTS: ProjectData[] = [
     githubUrl: 'https://github.com/deepaksinghh12/AlgoQuest-Algorithm-Visualizer',
     canEmbedLivePreview: false,
     previewType: 'code-visualizer',
+    screenshotUrl: '/images/projects/algoquest.png',
+    screenshotAlt: 'AlgoQuest genuine interactive visualizer interface screenshot',
+    objectFit: 'cover',
   },
   {
     id: 'quotely',
@@ -294,10 +312,18 @@ export const PROJECTS: ProjectData[] = [
       label: 'Live Utility',
       variant: 'secondary',
     },
+    metrics: [
+      { label: 'Bundle Size', value: '<50kB Gzip' },
+      { label: 'Export', value: 'Instant PNG' },
+      { label: 'Rendering', value: 'HTML5 Canvas' },
+    ],
     githubUrl: 'https://github.com/deepaksinghh12/Quotely-Turn-your-text-into-stunning-visual-posts.',
     liveUrl: 'https://quotely-turn-your-text-into-stunnin.vercel.app/',
     canEmbedLivePreview: true,
     previewType: 'live-iframe',
+    screenshotUrl: '/images/projects/quotely.png',
+    screenshotAlt: 'Quotely genuine production deployment screenshot',
+    objectFit: 'cover',
   },
   {
     id: 'sat-vex',
@@ -330,8 +356,16 @@ export const PROJECTS: ProjectData[] = [
       label: 'Research Project',
       variant: 'outline',
     },
+    metrics: [
+      { label: 'Propagator', value: 'SGP4 / TLE' },
+      { label: '3D Engine', value: 'CesiumJS WebGL' },
+      { label: 'Domain', value: 'Orbital Mechanics' },
+    ],
     githubUrl: 'https://github.com/deepaksinghh12/Satvex',
     canEmbedLivePreview: false,
     previewType: 'dashboard-mockup',
+    screenshotUrl: '/images/projects/satvex.png',
+    screenshotAlt: 'SAT-VEX authentic satellite orbital analysis interface screenshot',
+    objectFit: 'contain',
   },
 ];
