@@ -82,8 +82,8 @@ export const PROJECTS: ProjectData[] = [
     isPrivateRepo: true,
     canEmbedLivePreview: false,
     previewType: 'dashboard-mockup',
-    screenshotUrl: '/images/projects/revflux.png',
-    screenshotAlt: 'RevFlux AI CRM genuine architecture and dashboard interface',
+    screenshotUrl: '',
+    screenshotAlt: 'RevFlux AI CRM — Private Project Case Study & Architecture Overview',
     objectFit: 'contain',
   },
   {
@@ -278,7 +278,7 @@ export const PROJECTS: ProjectData[] = [
     canEmbedLivePreview: false,
     previewType: 'code-visualizer',
     screenshotUrl: '/images/projects/algoquest.png',
-    screenshotAlt: 'AlgoQuest genuine interactive visualizer interface screenshot',
+    screenshotAlt: 'AlgoQuest platform interface displaying problem catalog and algorithm module feed',
     objectFit: 'cover',
   },
   {
@@ -364,8 +364,8 @@ export const PROJECTS: ProjectData[] = [
     githubUrl: 'https://github.com/deepaksinghh12/Satvex',
     canEmbedLivePreview: false,
     previewType: 'dashboard-mockup',
-    screenshotUrl: '/images/projects/satvex.png',
-    screenshotAlt: 'SAT-VEX authentic satellite orbital analysis interface screenshot',
+    screenshotUrl: '',
+    screenshotAlt: 'SAT-VEX orbital tracking system architecture and technical specification',
     objectFit: 'contain',
   },
 ];

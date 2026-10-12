@@ -24,9 +24,9 @@ export function PreviewWindowManager({
     <>
       {/* Desktop Picture-in-Picture Windows */}
       {activeProjects.map((project, idx) => {
-        // Offset cascading window positions
-        const initialX = Math.min(window.innerWidth - 680, 80 + idx * 40);
-        const initialY = Math.min(window.innerHeight - 500, 100 + idx * 40);
+        // Offset cascading window positions with viewport safety bounds
+        const initialX = Math.max(20, Math.min(window.innerWidth - 680, 80 + idx * 40));
+        const initialY = Math.max(60, Math.min(window.innerHeight - 500, 100 + idx * 40));
 
         return (
           <FloatingPreviewWindow

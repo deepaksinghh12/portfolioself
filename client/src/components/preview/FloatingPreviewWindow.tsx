@@ -44,7 +44,7 @@ export function FloatingPreviewWindow({
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const handleMouseDown = (e: React.MouseEvent) => {
+  const handlePointerDown = (e: React.PointerEvent) => {
     // Only drag from header, not buttons
     if ((e.target as HTMLElement).closest('button')) return;
     onFocus();
@@ -54,21 +54,21 @@ export function FloatingPreviewWindow({
       y: e.clientY - position.y,
     };
 
-    const handleMouseMove = (moveEvent: MouseEvent) => {
+    const handlePointerMove = (moveEvent: PointerEvent) => {
       if (!isDraggingRef.current) return;
       const newX = Math.max(10, Math.min(window.innerWidth - 300, moveEvent.clientX - dragOffsetRef.current.x));
       const newY = Math.max(60, Math.min(window.innerHeight - 100, moveEvent.clientY - dragOffsetRef.current.y));
       setPosition({ x: newX, y: newY });
     };
 
-    const handleMouseUp = () => {
+    const handlePointerUp = () => {
       isDraggingRef.current = false;
-      window.removeEventListener('mousemove', handleMouseMove);
-      window.removeEventListener('mouseup', handleMouseUp);
+      window.removeEventListener('pointermove', handlePointerMove);
+      window.removeEventListener('pointerup', handlePointerUp);
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('mouseup', handleMouseUp);
+    window.addEventListener('pointermove', handlePointerMove);
+    window.addEventListener('pointerup', handlePointerUp);
   };
 
   const handleReload = () => {
@@ -126,8 +126,8 @@ export function FloatingPreviewWindow({
     >
       {/* Title Bar (Draggable) */}
       <div
-        onMouseDown={handleMouseDown}
-        className="h-10 bg-muted/80 border-b border-border/70 px-3 flex items-center justify-between cursor-grab active:cursor-grabbing"
+        onPointerDown={handlePointerDown}
+        className="h-10 bg-muted/80 border-b border-border/70 px-3 flex items-center justify-between cursor-grab active:cursor-grabbing touch-none"
       >
         {/* Traffic Light Buttons */}
         <div className="flex items-center gap-1.5">

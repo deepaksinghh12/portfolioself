@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ProjectData } from '@/data/projects';
-import { ExternalLink, Layers, Sparkles } from 'lucide-react';
+import { Layers, Sparkles } from 'lucide-react';
 
 interface VisualProps {
   project: ProjectData;
