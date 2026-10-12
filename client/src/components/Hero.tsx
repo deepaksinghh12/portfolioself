@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Download, Github, Linkedin, Code, Mail, Sparkles, Terminal, Award, GraduationCap } from 'lucide-react';
+import { ArrowDown, Download, Github, Linkedin, Code, Mail, Sparkles, Terminal, GraduationCap } from 'lucide-react';
 
 export default function Hero() {
   const scrollToSection = (id: string) => {
@@ -17,16 +17,11 @@ export default function Hero() {
       <div className="absolute inset-0 bg-grid-pattern opacity-5 pointer-events-none" />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-8">
-        {/* Availability & Recognition Pills */}
+        {/* Availability Pill */}
         <div className="flex flex-wrap items-center justify-center gap-2.5 animate-fade-in">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
             <span>Available for Full Stack & SDE Roles</span>
-          </div>
-
-          <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20">
-            <Award className="w-3.5 h-3.5" />
-            <span>SIH 2025 National Winner (50,000+ Teams)</span>
           </div>
         </div>
 
