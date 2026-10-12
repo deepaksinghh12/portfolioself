@@ -1,4 +1,4 @@
-import { Github, Linkedin, Code, Heart } from 'lucide-react';
+import { Github, Linkedin, Code } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function Footer() {
@@ -69,9 +69,6 @@ export default function Footer() {
         <div className="border-t pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm" data-testid="text-footer-copyright">
             © {currentYear} Deepak Singh. All rights reserved.
-          </p>
-          <p className="text-muted-foreground text-sm flex items-center gap-1" data-testid="text-footer-made-with">
-            Made with <Heart className="h-4 w-4 text-red-500 fill-current" /> using React & Tailwind
           </p>
         </div>
       </div>

@@ -67,13 +67,6 @@ export function ProjectVisualMockup({ project, className = '' }: VisualProps) {
           </div>
         </div>
       )}
-
-      {/* Floating authentic indicator tag on bottom-right */}
-      <div className="absolute bottom-2.5 right-2.5 z-10">
-        <span className="inline-flex items-center gap-1 text-[10px] font-mono px-2 py-0.5 rounded-full bg-background/90 text-foreground/80 backdrop-blur-md border border-border/60 shadow-xs pointer-events-none">
-          {project.isPrivateRepo ? 'Architecture Preview' : 'Authentic Screenshot'}
-        </span>
-      </div>
     </div>
   );
 }
